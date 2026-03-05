@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Happy Birthday!</title>
+</head>
+<body>
+    <div class="hearts-bg" id="heartsBackground"></div>
+
+    <div class="login-screen" id="loginScreen">
+        <div class="login-card">
+            <h1>A Special Message Awaits!!</h1>
+            <p>Enter the secret password to unlock you're Birthday surprise...</p>
+            <input type="password" class="password-input" id="passwordInput" placeholder="Enter password" />
+            <br>
+            <button class="enter-btn" onclick="checkPassword()">Enter</button>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #888;">Hint: rumah kedua after shs banyak cowo gantengnya</p>
+        </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+        <div class="container">
+            <div class="header">
+                <h1>Happy Birthday!!</h1>
+                <p>A small milestone for you.</p>
+            </div>
+
+            <div class="navigation">
+                <button class="nav-btn active" onclick="showPage('album')">It's You</button>
+                <button class="nav-btn" onclick="showPage('letter')">To You</button>
+            </div>
+
+            <div class="page active" id="album">
+                <h2 style="color: #c44569; margin-bottom: 20px; text-align: center;">The beauty of You</h2>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="src/1.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/2.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/3.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/4.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/5.jpg" alt="">
+                    </div>
+                    <div class="photo-item">
+                        <img src="src/6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="letter">
+                <h2 style="color: #c44569; margin-bottom: 30px; text-align: center;">Happy birthday</h2>
+                <div class="love-letter">
+                    <br>
+                    <p>I hope God bless you! May this year always be happy, and throw away the sadness you went through yesterday. I always pray that you will always be happy n yyaaa even if we're not as close as before. i want you to know that you'll always have a special place in my heart.</p><br>
+                    <p>i'll never forget all the memories, laughter, and moments we shared they'll always mean so much to me. you've always had this light that makes people happy just by being around you, and i hope that light never fade. i may not always be there like before, but i'll always be here by your side when you have a problem or what ever. wish you nothing but the best geniune happiness, success, and peace in everything you do. you truly deserve it all again</p>
+                    <br>
+                  <p style="text-align: right;"><br> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input type="file" class="hidden-file-input" id="photoUpload" accept="image/*" onchange="handlePhotoUpload(event)">
+    <input type="file" class="hidden-file-input" id="puzzleImageUpload" accept="image/*" onchange="handlePuzzleImageUpload(event)">
+    <script src="src/script.js" defer></script>
+</body>
+
+</html>
+
+
+
